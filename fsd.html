@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Emoji Eyes Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: aquamarine;
+      font-size: 120px;
+      cursor: pointer;
+    }
+
+    .emoji {
+      transition: transform 0.2s ease;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- 😐 eyes open | 😑 eyes closed -->
+  <div class="emoji" id="emoji">😑</div>
+
+  <script>
+    const emoji = document.getElementById("emoji");
+
+    emoji.addEventListener("mouseenter", () => {
+      emoji.textContent = "😐"; // eyes open
+    });
+
+    emoji.addEventListener("mouseleave", () => {
+      emoji.textContent = "😑"; // eyes closed
+    });
+  </script>
+</body>
+</html>
