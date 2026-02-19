@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cms.css">
+    <title>Contacts App</title>
+</head>
+<body>
+    <div class="full-page">
+        <div class="form-container">
+            <div>
+                <h1>Contacts Management App</h1>
+            </div>
+            <div>
+                <input class="input-field" type="text" id="nameInput" placeholder="Enter Name">
+                <input class="input-field" type="text" id="phoneInput" placeholder="Enter Phone Number">
+                <input class="input-field" type="text" id="emailInput" placeholder="Enter Email">
+                <button onclick="addContact()" class="form-btn" id="addContactBtn">Add Contact</button>
+                <button onclick="updateContact()" class="form-btn" id="updateContactBtn">Update Contact</button>
+            </div>
+        </div>
+        <div id= "contactContainer" class="contacts-container">
+            
+        </div>
+    </div>
+
+    <script src="./cms.js"></script>
+</body>
+</html>
